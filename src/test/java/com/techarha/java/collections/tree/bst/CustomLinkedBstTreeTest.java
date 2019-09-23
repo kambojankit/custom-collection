@@ -151,7 +151,7 @@ public class CustomLinkedBstTreeTest {
         assertEquals(new Integer(8), tree.inorderSuccessor(7));
         assertEquals(new Integer(13), tree.inorderSuccessor(12));
         assertEquals(new Integer(30), tree.inorderSuccessor(29));
-        assertEquals(new Integer(12), tree.inorderSuccessor(12));
+        assertEquals(new Integer(13), tree.inorderSuccessor(12));
     }
 
     private CustomTree<Integer> getRandomBst() {
