@@ -2,15 +2,16 @@ package com.techarha.java.algorithms.sorting;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.omg.CORBA.INTERNAL;
 
 import static org.junit.Assert.*;
 
-public class HeapSortTest {
+public class QuickSortTest {
+
     CustomSort customSort;
+
     @Before
     public void setUp() throws Exception {
-        customSort = new HeapSort();
+        customSort = new QuickSort();
     }
 
     @Test
@@ -22,6 +23,7 @@ public class HeapSortTest {
         for (int i = 0; i < actual.length; i++) {
             System.out.print(actual[i] + " ");
         }
+
         assertArrayEquals(expected, actual);
     }
 }

@@ -1,8 +1,8 @@
 package com.techarha.java.algorithms.sorting;
 
-public class HeapSort {
+public class HeapSort implements CustomSort {
 
-    public static Integer[] sort(Integer[] input) {
+    public Integer[] sort(Integer[] input) {
         if(input == null || input.length <= 0) {
             return null;
         }
