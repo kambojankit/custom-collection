@@ -171,9 +171,9 @@ public class CustomLinkedBstTree<T extends Comparable<T>> implements CustomTree<
 
         String left = preOrderTraversal(root.getLeft());
         String right = preOrderTraversal(root.getRight());
-        String current = root.getData().toString();
+        String rootData = root.getData().toString();
 
-        return current + " " + left + " " + right;
+        return rootData + " " + left + " " + right;
     }
 
     private String inOrderTraversal(BinaryTreeNode<T> root) {
